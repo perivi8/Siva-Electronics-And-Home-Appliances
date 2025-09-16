@@ -139,7 +139,7 @@ const FeaturedProducts = () => {
                     <div className="aspect-square bg-white rounded-lg mb-4 overflow-hidden">
                       <div className="w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform">
                         <img 
-                          src={`/src/assets/${product.id}.jpg`} 
+                          src={product.image} 
                           alt={product.name}
                           className="w-full h-full object-contain p-2"
                           onError={(e) => {
