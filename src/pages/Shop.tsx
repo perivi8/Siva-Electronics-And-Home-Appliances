@@ -428,11 +428,11 @@ const Shop = () => {
                 <CardHeader className="p-4">
                   <div className="aspect-square bg-white rounded-lg mb-4 overflow-hidden relative">
                     <img 
-                      src={`${import.meta.env.BASE_URL}${product.image}`} 
+                      src={product.image} 
                       alt={product.name}
                       className="w-full h-full object-contain group-hover:scale-105 transition-transform"
                       onError={(e) => {
-                        e.currentTarget.src = `${import.meta.env.BASE_URL}/placeholder.svg`;
+                        e.currentTarget.src = '/placeholder.svg';
                       }}
                     />
                   </div>

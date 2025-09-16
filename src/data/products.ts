@@ -1,12 +1,110 @@
 import { Product } from '../contexts/CartContext';
 
+// Import all images
+import img1 from '../assets/1.jpg';
+import img1_1 from '../assets/1.1.jpg';
+import img1_2 from '../assets/1.2.jpg';
+import img1_3 from '../assets/1.3.jpg';
+import img2 from '../assets/2.jpg';
+import img2_1 from '../assets/2.1.jpg';
+import img2_2 from '../assets/2.2.jpg';
+import img2_3 from '../assets/2.3.jpg';
+import img3 from '../assets/3.jpg';
+import img3_1 from '../assets/3.1.jpg';
+import img3_2 from '../assets/3.2.jpg';
+import img3_3 from '../assets/3.3.jpg';
+import img4 from '../assets/4.jpg';
+import img4_1 from '../assets/4.1.jpg';
+import img4_2 from '../assets/4.2.jpg';
+import img4_3 from '../assets/4.3.jpg';
+import img5 from '../assets/5.jpg';
+import img5_1 from '../assets/5.1.jpg';
+import img5_2 from '../assets/5.2.jpg';
+import img5_3 from '../assets/5.3.jpg';
+import img6 from '../assets/6.jpg';
+import img6_1 from '../assets/6.1.jpg';
+import img6_2 from '../assets/6.2.jpg';
+import img6_3 from '../assets/6.3.jpg';
+import img7 from '../assets/7.jpg';
+import img7_1 from '../assets/7.1.jpg';
+import img7_2 from '../assets/7.2.jpg';
+import img7_3 from '../assets/7.3.jpg';
+import img8 from '../assets/8.jpg';
+import img8_1 from '../assets/8.1.jpg';
+import img8_2 from '../assets/8.2.jpg';
+import img8_3 from '../assets/8.3.jpg';
+import img9 from '../assets/9.jpg';
+import img9_1 from '../assets/9.1.jpg';
+import img9_2 from '../assets/9.2.jpg';
+import img9_3 from '../assets/9.3.jpg';
+import img10 from '../assets/10.jpg';
+import img10_1 from '../assets/10.1.jpg';
+import img10_2 from '../assets/10.2.jpg';
+import img10_3 from '../assets/10.3.jpg';
+import img11 from '../assets/11.jpg';
+import img11_1 from '../assets/11.1.jpg';
+import img11_2 from '../assets/11.2.jpg';
+import img11_3 from '../assets/11.3.jpg';
+import img12 from '../assets/12.jpg';
+import img12_1 from '../assets/12.1.jpg';
+import img12_2 from '../assets/12.2.jpg';
+import img12_3 from '../assets/12.3.jpg';
+import img13 from '../assets/13.jpg';
+import img13_1 from '../assets/13.1.jpg';
+import img13_2 from '../assets/13.2.jpg';
+import img13_3 from '../assets/13.3.jpg';
+import img14 from '../assets/14.jpg';
+import img14_1 from '../assets/14.1.jpg';
+import img14_2 from '../assets/14.2.jpg';
+import img14_3 from '../assets/14.3.jpg';
+import img15 from '../assets/15.jpg';
+import img15_1 from '../assets/15.1.jpg';
+import img15_2 from '../assets/15.2.jpg';
+import img15_3 from '../assets/15.3.jpg';
+import img16 from '../assets/16.jpg';
+import img16_1 from '../assets/16.1.jpg';
+import img16_2 from '../assets/16.2.jpg';
+import img16_3 from '../assets/16.3.jpg';
+import img17 from '../assets/17.jpg';
+import img17_1 from '../assets/17.1.jpg';
+import img17_2 from '../assets/17.2.jpg';
+import img17_3 from '../assets/17.3.jpg';
+import img18 from '../assets/18.jpg';
+import img18_1 from '../assets/18.1.jpg';
+import img18_2 from '../assets/18.2.jpg';
+import img18_3 from '../assets/18.3.jpg';
+import img19 from '../assets/19.jpg';
+import img19_1 from '../assets/19.1.jpg';
+import img19_2 from '../assets/19.2.jpg';
+import img19_3 from '../assets/19.3.jpg';
+import img20 from '../assets/20.jpg';
+import img20_1 from '../assets/20.1.jpg';
+import img20_2 from '../assets/20.2.jpg';
+import img20_3 from '../assets/20.3.jpg';
+import img21 from '../assets/21.jpg';
+import img21_1 from '../assets/21.1.jpg';
+import img21_2 from '../assets/21.2.jpg';
+import img21_3 from '../assets/21.3.jpg';
+import img22 from '../assets/22.jpg';
+import img22_1 from '../assets/22.1.jpg';
+import img22_2 from '../assets/22.2.jpg';
+import img22_3 from '../assets/22.3.jpg';
+import img23 from '../assets/23.jpg';
+import img23_1 from '../assets/23.1.jpg';
+import img23_2 from '../assets/23.2.jpg';
+import img23_3 from '../assets/23.3.jpg';
+import img24 from '../assets/24.jpg';
+import img24_1 from '../assets/24.1.jpg';
+import img24_2 from '../assets/24.2.jpg';
+import img24_3 from '../assets/24.3.jpg';
+
 export const products: Product[] = [
   {
     id: '1',
     name: 'Samsung 253L Double Door Refrigerator',
     price: 28990,
-    image: '/assets/1.jpg',
-    subImages: ['/assets/1.1.jpg', '/assets/1.2.jpg', '/assets/1.3.jpg'],
+    image: img1,
+    subImages: [img1_1, img1_2, img1_3],
     category: 'Kitchen Appliances',
     description: 'Energy efficient double door refrigerator with digital inverter technology. Features convertible freezer and stabilizer free operation.',
     brand: 'Samsung',
@@ -17,8 +115,8 @@ export const products: Product[] = [
     id: '2',
     name: 'LG 7kg Front Load Washing Machine',
     price: 35999,
-    image: '/assets/2.jpg',
-    subImages: ['/assets/2.1.jpg', '/assets/2.2.jpg', '/assets/2.3.jpg'],
+    image: img2,
+    subImages: [img2_1, img2_2, img2_3],
     category: 'Home Appliances',
     description: 'AI Direct Drive technology with 6 Motion DD for superior fabric care. Steam wash and allergy care features included.',
     brand: 'LG',
@@ -29,8 +127,8 @@ export const products: Product[] = [
     id: '3',
     name: 'Whirlpool 1.5 Ton 3 Star Split AC',
     price: 32990,
-    image: '/assets/3.jpg',
-    subImages: ['/assets/3.1.jpg', '/assets/3.2.jpg', '/assets/3.3.jpg'],
+    image: img3,
+    subImages: [img3_1, img3_2, img3_3],
     category: 'Home Appliances',
     description: '3D Cool technology with faster cooling. Copper condenser coil for better heat transfer and durability.',
     brand: 'Whirlpool',
@@ -41,8 +139,8 @@ export const products: Product[] = [
     id: '4',
     name: 'Sony 55" 4K Ultra HD Smart LED TV',
     price: 54990,
-    image: '/assets/4.jpg',
-    subImages: ['/assets/4.1.jpg', '/assets/4.2.jpg', '/assets/4.3.jpg'],
+    image: img4,
+    subImages: [img4_1, img4_2, img4_3],
     category: 'Electronics',
     description: '4K HDR Processor X1 with TRILUMINOS Display. Android TV with Google Assistant and Chromecast built-in.',
     brand: 'Sony',
@@ -53,8 +151,8 @@ export const products: Product[] = [
     id: '5',
     name: 'Bajaj Majesty RX11 OTG Oven',
     price: 8499,
-    image: '/assets/5.jpg',
-    subImages: ['/assets/5.1.jpg', '/assets/5.2.jpg', '/assets/5.3.jpg'],
+    image: img5,
+    subImages: [img5_1, img5_2, img5_3],
     category: 'Kitchen Appliances',
     description: '28L capacity with motorized rotisserie and convection cooking. Double glass door with cool touch handle.',
     brand: 'Bajaj',
@@ -65,8 +163,8 @@ export const products: Product[] = [
     id: '6',
     name: 'Prestige Iris Plus Induction Cooktop',
     price: 3299,
-    image: '/assets/6.jpg',
-    subImages: ['/assets/6.1.jpg', '/assets/6.2.jpg', '/assets/6.3.jpg'],
+    image: img6,
+    subImages: [img6_1, img6_2, img6_3],
     category: 'Kitchen Appliances',
     description: '2000W power with 8 preset cooking menus. Automatic voltage regulator and overheating protection.',
     brand: 'Prestige',
@@ -77,8 +175,8 @@ export const products: Product[] = [
     id: '7',
     name: 'Philips Air Fryer HD9252/90',
     price: 12995,
-    image: '/assets/7.jpg',
-    subImages: ['/assets/7.1.jpg', '/assets/7.2.jpg', '/assets/7.3.jpg'],
+    image: img7,
+    subImages: [img7_1, img7_2, img7_3],
     category: 'Kitchen Appliances',
     description: 'Rapid Air technology for healthier cooking with up to 90% less fat. 4.1L capacity perfect for families.',
     brand: 'Philips',
@@ -89,8 +187,8 @@ export const products: Product[] = [
     id: '8',
     name: 'Godrej 190L Single Door Refrigerator',
     price: 16990,
-    image: '/assets/8.jpg',
-    subImages: ['/assets/8.1.jpg', '/assets/8.2.jpg', '/assets/8.3.jpg'],
+    image: img8,
+    subImages: [img8_1, img8_2, img8_3],
     category: 'Kitchen Appliances',
     description: 'Direct cool technology with anti-bacterial gasket. Spacious vegetable tray and bottle guard.',
     brand: 'Godrej',
@@ -101,8 +199,8 @@ export const products: Product[] = [
     id: '9',
     name: 'Bosch 12 Place Settings Dishwasher',
     price: 39999,
-    image: '/assets/9.jpg',
-    subImages: ['/assets/9.1.jpg', '/assets/9.2.jpg', '/assets/9.3.jpg'],
+    image: img9,
+    subImages: [img9_1, img9_2, img9_3],
     category: 'Kitchen Appliances',
     description: 'EcoSilence Drive motor with multiple wash programs. Half load option and intensive 70°C program.',
     brand: 'Bosch',
@@ -113,8 +211,8 @@ export const products: Product[] = [
     id: '10',
     name: 'Voltas 1.5 Ton Window AC',
     price: 28999,
-    image: '/assets/10.jpg',
-    subImages: ['/assets/10.1.jpg', '/assets/10.2.jpg', '/assets/10.3.jpg'],
+    image: img10,
+    subImages: [img10_1, img10_2, img10_3],
     category: 'Home Appliances',
     description: 'Multi-stage filtration with anti-dust filter. Copper condenser for efficient cooling and durability.',
     brand: 'Voltas',
@@ -125,8 +223,8 @@ export const products: Product[] = [
     id: '11',
     name: 'IFB 6.5kg Top Load Washing Machine',
     price: 22990,
-    image: '/assets/11.jpg',
-    subImages: ['/assets/11.1.jpg', '/assets/11.2.jpg', '/assets/11.3.jpg'],
+    image: img11,
+    subImages: [img11_1, img11_2, img11_3],
     category: 'Home Appliances',
     description: 'Aqua Energie water softener with 8 wash programs. Tub clean and auto balance system included.',
     brand: 'IFB',
@@ -137,8 +235,8 @@ export const products: Product[] = [
     id: '12',
     name: 'Mi 32" HD Ready Smart LED TV',
     price: 13999,
-    image: '/assets/12.jpg',
-    subImages: ['/assets/12.1.jpg', '/assets/12.2.jpg', '/assets/12.3.jpg'],
+    image: img12,
+    subImages: [img12_1, img12_2, img12_3],
     category: 'Electronics',
     description: 'Android TV 9.0 with built-in Chromecast. 20W speakers with DTS-HD audio support.',
     brand: 'Mi',
@@ -149,8 +247,8 @@ export const products: Product[] = [
     id: '13',
     name: 'Blue Star 1.5 Ton Inverter Split AC',
     price: 42990,
-    image: '/assets/13.jpg',
-    subImages: ['/assets/13.1.jpg', '/assets/13.2.jpg', '/assets/13.3.jpg'],
+    image: img13,
+    subImages: [img13_1, img13_2, img13_3],
     category: 'Home Appliances',
     description: 'Precision Cooling Technology with 5-star energy rating. Anti-corrosive coating and self-diagnosis.',
     brand: 'Blue Star',
@@ -161,8 +259,8 @@ export const products: Product[] = [
     id: '14',
     name: 'Haier 195L Direct Cool Refrigerator',
     price: 18990,
-    image: '/assets/14.jpg',
-    subImages: ['/assets/14.1.jpg', '/assets/14.2.jpg', '/assets/14.3.jpg'],
+    image: img14,
+    subImages: [img14_1, img14_2, img14_3],
     category: 'Kitchen Appliances',
     description: 'Bottom mount freezer with stabilizer free operation. Magic cooling zone for fruits and vegetables.',
     brand: 'Haier',
@@ -173,8 +271,8 @@ export const products: Product[] = [
     id: '15',
     name: 'Panasonic 25L Convection Microwave',
     price: 15999,
-    image: '/assets/15.jpg',
-    subImages: ['/assets/15.1.jpg', '/assets/15.2.jpg', '/assets/15.3.jpg'],
+    image: img15,
+    subImages: [img15_1, img15_2, img15_3],
     category: 'Kitchen Appliances',
     description: '25L capacity with 253 auto cook menus. Inverter technology for even heating and energy efficiency.',
     brand: 'Panasonic',
@@ -185,8 +283,8 @@ export const products: Product[] = [
     id: '16',
     name: 'TCL 43" 4K UHD Smart Android TV',
     price: 29999,
-    image: '/assets/16.jpg',
-    subImages: ['/assets/16.1.jpg', '/assets/16.2.jpg', '/assets/16.3.jpg'],
+    image: img16,
+    subImages: [img16_1, img16_2, img16_3],
     category: 'Electronics',
     description: 'HDR10 support with Dolby Audio. Google Assistant and hands-free voice control.',
     brand: 'TCL',
@@ -197,8 +295,8 @@ export const products: Product[] = [
     id: '17',
     name: 'Crompton Greaves Ceiling Fan 48"',
     price: 2999,
-    image: '/assets/17.jpg',
-    subImages: ['/assets/17.1.jpg', '/assets/17.2.jpg', '/assets/17.3.jpg'],
+    image: img17,
+    subImages: [img17_1, img17_2, img17_3],
     category: 'Home Appliances',
     description: 'High speed ceiling fan with aerodynamically designed blades. 2-year warranty on motor.',
     brand: 'Crompton',
@@ -209,8 +307,8 @@ export const products: Product[] = [
     id: '18',
     name: 'Kent Grand Plus Water Purifier',
     price: 19999,
-    image: '/assets/18.jpg',
-    subImages: ['/assets/18.1.jpg', '/assets/18.2.jpg', '/assets/18.3.jpg'],
+    image: img18,
+    subImages: [img18_1, img18_2, img18_3],
     category: 'Home Appliances',
     description: 'RO+UV+UF+TDS Controller technology. 8L storage capacity with mineral retention technology.',
     brand: 'Kent',
@@ -221,8 +319,8 @@ export const products: Product[] = [
     id: '19',
     name: 'Morphy Richards OTG 28L',
     price: 9999,
-    image: '/assets/19.jpg',
-    subImages: ['/assets/19.1.jpg', '/assets/19.2.jpg', '/assets/19.3.jpg'],
+    image: img19,
+    subImages: [img19_1, img19_2, img19_3],
     category: 'Kitchen Appliances',
     description: '28L capacity with motorized rotisserie. Temperature control up to 250°C with 60-minute timer.',
     brand: 'Morphy Richards',
@@ -233,8 +331,8 @@ export const products: Product[] = [
     id: '20',
     name: 'Havells Mixer Grinder 750W',
     price: 4999,
-    image: '/assets/20.jpg',
-    subImages: ['/assets/20.1.jpg', '/assets/20.2.jpg', '/assets/20.3.jpg'],
+    image: img20,
+    subImages: [img20_1, img20_2, img20_3],
     category: 'Kitchen Appliances',
     description: '750W copper motor with 3 jars. Overload protection and shock-proof ABS body.',
     brand: 'Havells',
@@ -245,8 +343,8 @@ export const products: Product[] = [
     id: '21',
     name: 'TCL 139 cm (55 inches) 4K Ultra HD Smart QLED Google TV',
     price: 49999,
-    image: '/assets/21.jpg',
-    subImages: ['/assets/21.1.jpg', '/assets/21.2.jpg', '/assets/21.3.jpg'],
+    image: img21,
+    subImages: [img21_1, img21_2, img21_3],
     category: 'Electronics',
     description: 'Quantum Dot technology with Dolby Vision and Atmos. Google TV with built-in Chromecast and Google Assistant.',
     brand: 'TCL',
@@ -257,8 +355,8 @@ export const products: Product[] = [
     id: '22',
     name: 'Carrier 1.5 Ton 3 Star Split AC',
     price: 34999,
-    image: '/assets/22.jpg',
-    subImages: ['/assets/22.1.jpg', '/assets/22.2.jpg', '/assets/22.3.jpg'],
+    image: img22,
+    subImages: [img22_1, img22_2, img22_3],
     category: 'Home Appliances',
     description: 'Flexicool technology with dual filtration. Copper condenser with anti-corrosive coating.',
     brand: 'Carrier',
@@ -269,8 +367,8 @@ export const products: Product[] = [
     id: '23',
     name: 'Pigeon Electric Kettle 1.5L',
     price: 1299,
-    image: '/assets/23.jpg',
-    subImages: ['/assets/23.1.jpg', '/assets/23.2.jpg', '/assets/23.3.jpg'],
+    image: img23,
+    subImages: [img23_1, img23_2, img23_3],
     category: 'Kitchen Appliances',
     description: '1.5L capacity with automatic shut-off. Stainless steel body with 360° swivel base.',
     brand: 'Pigeon',
@@ -281,8 +379,8 @@ export const products: Product[] = [
     id: '24',
     name: 'Eureka Forbes Vacuum Cleaner',
     price: 8999,
-    image: '/assets/24.jpg',
-    subImages: ['/assets/24.1.jpg', '/assets/24.2.jpg', '/assets/24.3.jpg'],
+    image: img24,
+    subImages: [img24_1, img24_2, img24_3],
     category: 'Home Appliances',
     description: '1400W motor with cyclonic technology. HEPA filter and multiple attachments included.',
     brand: 'Eureka Forbes',
