@@ -26,7 +26,7 @@ const TermsConditions = () => {
           </p>
 
           <p className="mb-6">
-            Welcome to Appliance Bright. By accessing our website, purchasing our products, or booking our services, you agree to the following Terms & Conditions. These terms govern all sales, services, warranties, and interactions with Appliance Bright.
+            Welcome to Siva Electronics. By accessing our website, purchasing our products, or booking our services, you agree to the following Terms & Conditions. These terms govern all sales, services, warranties, and interactions with Siva Electronics.
           </p>
 
           <p className="mb-8 font-medium text-amber-600">
@@ -125,7 +125,7 @@ const TermsConditions = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">10. Governing Law & Jurisdiction</h2>
             <p className="mb-4">
-              These Terms & Conditions are governed by the laws of India. Any disputes will fall under the jurisdiction of the courts in Mumbai, Maharashtra.
+              These Terms & Conditions are governed by the laws of India. Any disputes will fall under the jurisdiction of the courts in Tiruvallur, Tamil Nadu.
             </p>
           </section>
 
@@ -133,11 +133,11 @@ const TermsConditions = () => {
             <h2 className="text-2xl font-semibold mb-4">11. Contact Us</h2>
             <p className="mb-4">For queries, assistance, or clarifications, please contact:</p>
             <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold">Appliance Bright</p>
-              <p>📍 123 Appliance Street, Mumbai, Maharashtra 400001, India</p>
-              <p>📞 +91 12345 67890</p>
-              <p>📧 Email: support@appliancebright.com</p>
-              <p>🌐 Website: www.appliancebright.com</p>
+              <p className="font-semibold">Siva Electronics</p>
+              <p>📍 OPP. TO 21, J.K.PLAZA, PALLIPAT MAIN ROAD, PODHATUR PETTAI, Tiruvallur, Tamil Nadu, 631208</p>
+              <p>📞 +91 9943691712 / +91 6383791917</p>
+              <p>📧 Email: contact@sivaappliances.shop</p>
+              <p>🌐 Website: http://sivaappliances.shop/</p>
             </div>
           </section>
         </div>

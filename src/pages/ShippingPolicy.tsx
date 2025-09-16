@@ -26,7 +26,7 @@ const ShippingPolicy = () => {
           </p>
 
           <p className="mb-8">
-            At Appliance Bright, we are committed to delivering your home appliances and electronics securely and within the promised time frame. This Shipping Policy outlines our procedures for order processing, delivery, charges, and customer support.
+            At Siva Electronics, we are committed to delivering your home appliances and electronics securely and within the promised time frame. This Shipping Policy outlines our procedures for order processing, delivery, charges, and customer support.
           </p>
 
           <section className="mb-8">
@@ -104,11 +104,11 @@ const ShippingPolicy = () => {
             <h2 className="text-2xl font-semibold mb-4">Need Help With Shipping?</h2>
             <p className="mb-4">For shipping-related questions, please contact:</p>
             <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold">Appliance Bright</p>
-              <p> 123 Appliance Street, Mumbai, Maharashtra 400001, India</p>
-              <p> +91 12345 67890</p>
-              <p> Email: support@appliancebright.com</p>
-              <p> Website: www.appliancebright.com</p>
+              <p className="font-semibold">Siva Electronics</p>
+              <p>📍 OPP. TO 21, J.K.PLAZA, PALLIPAT MAIN ROAD, PODHATUR PETTAI, Tiruvallur, Tamil Nadu, 631208</p>
+              <p>📞 +91 9943691712 / +91 6383791917</p>
+              <p>📧 Email: contact@sivaappliances.shop</p>
+              <p>🌐 Website: http://sivaappliances.shop/</p>
             </div>
           </section>
         </div>

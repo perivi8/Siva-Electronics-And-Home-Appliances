@@ -3,33 +3,17 @@ import { Link, useNavigate, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { ShoppingCart, User, Search, LogOut, Package, Heart } from "lucide-react";
-import { useAuth } from "@/contexts/AuthContext";
+import { ShoppingCart, Search, Package, Heart } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { useWishlist } from "@/contexts/WishlistContext";
 import { products, searchProducts } from "@/data/products";
-import LoginModal from "./LoginModal";
 
 const Header = () => {
   const navigate = useNavigate();
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const { user, isAuthenticated, logout } = useAuth();
   const { getTotalItems } = useCart();
   const { getTotalWishlistItems } = useWishlist();
-
-  const handleProfileClick = () => {
-    if (!isAuthenticated) {
-      setIsLoginModalOpen(true);
-    }
-  };
-
-  const handleLogout = () => {
-    logout();
-    navigate("/");
-  };
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -90,7 +74,7 @@ const Header = () => {
               <span>✉️ sivahomeappliances033@gmail.com</span>
             </div>
             <div className="flex items-center space-x-4">
-              <span>👤 R C Karthik</span>
+              {/* <span>R C Karthik</span> */}
               <Link to="/support" className="hover:text-primary">Support</Link>
             </div>
           </div>
@@ -252,43 +236,19 @@ const Header = () => {
                 )}
               </Button>
 
-              {/* Profile/Login */}
-              {isAuthenticated ? (
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" size="sm" className="flex items-center space-x-2">
-                      <User className="w-4 h-4" />
-                      <span className="hidden md:inline">{user?.name}</span>
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="w-48">
-                    <DropdownMenuItem onClick={() => navigate('/orders')}>
-                      <Package className="w-4 h-4 mr-2" />
-                      My Orders
-                    </DropdownMenuItem>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem onClick={handleLogout}>
-                      <LogOut className="w-4 h-4 mr-2" />
-                      Logout
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              ) : (
-                <Button variant="ghost" size="sm" onClick={handleProfileClick}>
-                  <User className="w-5 h-5 mr-2" />
-                  Login
-                </Button>
-              )}
+              {/* My Orders */}
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => navigate("/orders")}
+              >
+                <Package className="w-5 h-5 mr-2" />
+                <span className="hidden md:inline">My Orders</span>
+              </Button>
             </div>
           </div>
         </div>
       </header>
-
-      {/* Login Modal */}
-      <LoginModal 
-        isOpen={isLoginModalOpen} 
-        onClose={() => setIsLoginModalOpen(false)} 
-      />
     </>
   );
 };

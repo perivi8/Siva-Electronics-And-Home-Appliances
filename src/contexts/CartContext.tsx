@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { useAuth } from './AuthContext';
 
 export interface Product {
   id: string;
@@ -44,35 +43,21 @@ interface CartProviderProps {
 
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
-  const { user, isAuthenticated } = useAuth();
 
-  // Load cart items when user changes
+  // Load cart items from localStorage on mount
   useEffect(() => {
-    if (isAuthenticated && user) {
-      const savedCart = localStorage.getItem(`cart_${user.id}`);
-      if (savedCart) {
-        setCartItems(JSON.parse(savedCart));
-      } else {
-        setCartItems([]);
-      }
-    } else {
-      setCartItems([]);
+    const savedCart = localStorage.getItem('cart_items');
+    if (savedCart) {
+      setCartItems(JSON.parse(savedCart));
     }
-  }, [user, isAuthenticated]);
+  }, []);
 
   // Save cart items to localStorage whenever cart changes
   useEffect(() => {
-    if (isAuthenticated && user) {
-      localStorage.setItem(`cart_${user.id}`, JSON.stringify(cartItems));
-    }
-  }, [cartItems, user, isAuthenticated]);
+    localStorage.setItem('cart_items', JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const addToCart = (product: Product, quantity: number = 1) => {
-    if (!isAuthenticated) {
-      alert('Please login to add items to cart');
-      return;
-    }
-
     setCartItems(prevItems => {
       const existingItem = prevItems.find(item => item.id === product.id);
       

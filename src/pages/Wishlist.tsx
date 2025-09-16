@@ -8,7 +8,6 @@ import { Badge } from '@/components/ui/badge';
 import { Heart, ShoppingCart, Trash2, Star } from 'lucide-react';
 import { useWishlist } from '@/contexts/WishlistContext';
 import { useCart } from '@/contexts/CartContext';
-import { useAuth } from '@/contexts/AuthContext';
 import { useToast } from '@/hooks/use-toast';
 import { products } from '@/data/products';
 
@@ -16,7 +15,6 @@ const Wishlist = () => {
   const navigate = useNavigate();
   const { wishlist, removeFromWishlist } = useWishlist();
   const { addToCart } = useCart();
-  const { isAuthenticated } = useAuth();
   const { toast } = useToast();
 
   const formatPrice = (price: number) => {
@@ -28,15 +26,6 @@ const Wishlist = () => {
   };
 
   const handleAddToCart = (productId: string) => {
-    if (!isAuthenticated) {
-      toast({
-        title: "Login Required",
-        description: "Please login to add items to cart",
-        variant: "destructive",
-      });
-      return;
-    }
-
     const product = products.find(p => p.id === productId);
     if (product) {
       addToCart(product);
@@ -57,22 +46,6 @@ const Wishlist = () => {
 
   // Get wishlist products
   const wishlistProducts = products.filter(product => wishlist.includes(product.id));
-
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-background pt-32">
-        <Header />
-        <main className="container mx-auto px-4 py-8">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold mb-4">Please Login</h1>
-            <p className="text-gray-600 mb-6">You need to login to view your wishlist</p>
-            <Button onClick={() => navigate('/')}>Return to Home</Button>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
 
   if (wishlistProducts.length === 0) {
     return (

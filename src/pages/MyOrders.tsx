@@ -17,7 +17,6 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
 import { Package, Calendar, MapPin, Phone, ShoppingBag, X } from 'lucide-react';
-import { useAuth } from '@/contexts/AuthContext';
 import { useToast } from '@/hooks/use-toast';
 import { products } from '@/data/products';
 
@@ -50,21 +49,18 @@ interface Order {
 
 const MyOrders = () => {
   const navigate = useNavigate();
-  const { user, isAuthenticated } = useAuth();
   const { toast } = useToast();
   const [orders, setOrders] = useState<Order[]>([]);
 
   useEffect(() => {
-    if (isAuthenticated && user) {
-      const savedOrders = localStorage.getItem(`orders_${user}`);
-      if (savedOrders) {
-        const parsedOrders = JSON.parse(savedOrders);
-        // Sort orders by date (newest first)
-        parsedOrders.sort((a: Order, b: Order) => new Date(b.orderDate).getTime() - new Date(a.orderDate).getTime());
-        setOrders(parsedOrders);
-      }
+    const savedOrders = localStorage.getItem('orders');
+    if (savedOrders) {
+      const parsedOrders = JSON.parse(savedOrders);
+      // Sort orders by date (newest first)
+      parsedOrders.sort((a: Order, b: Order) => new Date(b.orderDate).getTime() - new Date(a.orderDate).getTime());
+      setOrders(parsedOrders);
     }
-  }, [user, isAuthenticated]);
+  }, []);
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-IN', {
@@ -103,9 +99,7 @@ const MyOrders = () => {
     setOrders(updatedOrders);
     
     // Update localStorage
-    if (user) {
-      localStorage.setItem(`orders_${user}`, JSON.stringify(updatedOrders));
-    }
+    localStorage.setItem('orders', JSON.stringify(updatedOrders));
     
     toast({
       title: "Order Cancelled",
@@ -113,22 +107,6 @@ const MyOrders = () => {
       variant: "destructive",
     });
   };
-
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-background pt-32">
-        <Header />
-        <main className="container mx-auto px-4 py-8">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold mb-4">Please Login</h1>
-            <p className="text-gray-600 mb-6">You need to login to view your orders</p>
-            <Button onClick={() => navigate('/')}>Return to Home</Button>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
 
   if (orders.length === 0) {
     return (

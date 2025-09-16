@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { useAuth } from './AuthContext';
 
 interface WishlistContextType {
   wishlist: string[];
@@ -26,32 +25,21 @@ interface WishlistProviderProps {
 
 export const WishlistProvider: React.FC<WishlistProviderProps> = ({ children }) => {
   const [wishlist, setWishlist] = useState<string[]>([]);
-  const { user } = useAuth();
 
-  // Load wishlist from localStorage when user changes
+  // Load wishlist from localStorage on mount
   useEffect(() => {
-    if (user) {
-      const savedWishlist = localStorage.getItem(`wishlist_${user}`);
-      if (savedWishlist) {
-        setWishlist(JSON.parse(savedWishlist));
-      } else {
-        setWishlist([]);
-      }
-    } else {
-      setWishlist([]);
+    const savedWishlist = localStorage.getItem('wishlist_items');
+    if (savedWishlist) {
+      setWishlist(JSON.parse(savedWishlist));
     }
-  }, [user]);
+  }, []);
 
   // Save wishlist to localStorage whenever it changes
   useEffect(() => {
-    if (user && wishlist.length >= 0) {
-      localStorage.setItem(`wishlist_${user}`, JSON.stringify(wishlist));
-    }
-  }, [wishlist, user]);
+    localStorage.setItem('wishlist_items', JSON.stringify(wishlist));
+  }, [wishlist]);
 
   const addToWishlist = (productId: string) => {
-    if (!user) return;
-    
     setWishlist(prev => {
       if (!prev.includes(productId)) {
         return [...prev, productId];
@@ -61,8 +49,6 @@ export const WishlistProvider: React.FC<WishlistProviderProps> = ({ children }) 
   };
 
   const removeFromWishlist = (productId: string) => {
-    if (!user) return;
-    
     setWishlist(prev => prev.filter(id => id !== productId));
   };
 
@@ -76,9 +62,7 @@ export const WishlistProvider: React.FC<WishlistProviderProps> = ({ children }) 
 
   const clearWishlist = () => {
     setWishlist([]);
-    if (user) {
-      localStorage.removeItem(`wishlist_${user}`);
-    }
+    localStorage.removeItem('wishlist_items');
   };
 
   const value: WishlistContextType = {

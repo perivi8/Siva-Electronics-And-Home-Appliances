@@ -6,13 +6,11 @@ import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
 import { products } from "@/data/products";
 import { useCart } from "@/contexts/CartContext";
-import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/hooks/use-toast";
 
 const FeaturedProducts = () => {
   const navigate = useNavigate();
   const { addToCart } = useCart();
-  const { isAuthenticated } = useAuth();
   const { toast } = useToast();
   const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -36,15 +34,6 @@ const FeaturedProducts = () => {
   const handleAddToCart = (e: React.MouseEvent, product: any) => {
     e.stopPropagation();
     
-    if (!isAuthenticated) {
-      toast({
-        title: "Login Required",
-        description: "Please login to add items to your cart",
-        variant: "destructive",
-      });
-      return;
-    }
-
     addToCart(product);
     toast({
       title: "Added to Cart",

@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <p className="mb-8">
-            At Appliance Bright, we respect your trust and are committed to protecting your personal information. As a retailer and service provider of home appliances and electronics, we ensure that all customer data is collected, stored, and used responsibly—aligned with the Indian IT Act and international data protection principles such as GDPR.
+            At Siva Electronics, we respect your trust and are committed to protecting your personal information. As a retailer and service provider of home appliances and electronics, we ensure that all customer data is collected, stored, and used responsibly—aligned with the Indian IT Act and international data protection principles such as GDPR.
           </p>
 
           <p className="mb-8">
@@ -112,15 +112,15 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
             <p className="mb-4">For questions, concerns, or privacy requests, please contact:</p>
             <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold">Appliance Bright</p>
-              <p>📍 123 Appliance Street, Mumbai, Maharashtra 400001, India</p>
-              <p>📞 +91 12345 67890</p>
-              <p>📧 Email: support@appliancebright.com</p>
-              <p>🌐 Website: www.appliancebright.com</p>
+              <p className="font-semibold">Siva Electronics</p>
+              <p>📍 OPP. TO 21, J.K.PLAZA, PALLIPAT MAIN ROAD, PODHATUR PETTAI, Tiruvallur, Tamil Nadu, 631208</p>
+              <p>📞 +91 9943691712 / +91 6383791917</p>
+              <p>📧 Email: contact@sivaappliances.shop</p>
+              <p>🌐 Website: http://sivaappliances.shop/</p>
             </div>
             <div className="mt-6 text-sm text-muted-foreground">
               <p>Last Updated: August 2025</p>
-              <p>© 2025 Appliance Bright. All Rights Reserved.</p>
+              <p>© 2025 Siva Electronics. All Rights Reserved.</p>
             </div>
           </section>
         </div>

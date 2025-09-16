@@ -11,7 +11,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { CheckCircle, MapPin, CreditCard, Banknote, Building2, Truck } from 'lucide-react';
 import { useCart } from '@/contexts/CartContext';
-import { useAuth } from '@/contexts/AuthContext';
 import { useToast } from '@/hooks/use-toast';
 
 interface DeliveryDetails {
@@ -44,7 +43,6 @@ type PaymentMethod = 'credit-card' | 'debit-card' | 'net-banking' | 'cod';
 const Checkout = () => {
   const navigate = useNavigate();
   const { cartItems, getTotalPrice, getTotalItems, clearCart } = useCart();
-  const { user, isAuthenticated } = useAuth();
   const { toast } = useToast();
   const [isConfirmed, setIsConfirmed] = useState(false);
   const [orderId, setOrderId] = useState('');
@@ -149,8 +147,12 @@ const Checkout = () => {
     const order = {
       id: newOrderId,
       items: cartItems.map(item => ({
-        ...item,
-        image: item.image // Ensure image property is included
+        id: item.id,
+        name: item.name,
+        price: item.price,
+        quantity: item.quantity,
+        brand: item.brand,
+        category: item.category
       })),
       deliveryDetails,
       paymentMethod: {
@@ -170,9 +172,9 @@ const Checkout = () => {
     };
 
     // Save order to localStorage
-    const existingOrders = JSON.parse(localStorage.getItem(`orders_${user}`) || '[]');
+    const existingOrders = JSON.parse(localStorage.getItem('orders') || '[]');
     existingOrders.push(order);
-    localStorage.setItem(`orders_${user}`, JSON.stringify(existingOrders));
+    localStorage.setItem('orders', JSON.stringify(existingOrders));
 
     // Clear cart
     clearCart();
@@ -304,22 +306,6 @@ const Checkout = () => {
 
     return null;
   };
-
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-background pt-32">
-        <Header />
-        <main className="container mx-auto px-4 py-8">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold mb-4">Please Login</h1>
-            <p className="text-gray-600 mb-6">You need to login to checkout</p>
-            <Button onClick={() => navigate('/')}>Return to Home</Button>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
 
   if (cartItems.length === 0 && !isConfirmed) {
     return (

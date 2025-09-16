@@ -26,7 +26,7 @@ const CancellationRefundPolicy = () => {
           </p>
 
           <p className="mb-8">
-            At Appliance Bright, customer satisfaction is our priority. While we strive to deliver high-quality appliances and services, we understand that cancellations or refunds may occasionally be required. This policy outlines how we handle such requests in a clear and transparent manner.
+            At Siva Electronics, customer satisfaction is our priority. While we strive to deliver high-quality appliances and services, we understand that cancellations or refunds may occasionally be required. This policy outlines how we handle such requests in a clear and transparent manner.
           </p>
 
           <section className="mb-8">
@@ -55,7 +55,7 @@ const CancellationRefundPolicy = () => {
               <ul className="list-disc pl-6 space-y-2">
                 <li>Return requests must be raised within 48 hours of delivery.</li>
                 <li>The product must be unused, with all original packaging, manuals, and accessories intact.</li>
-                <li>Installation-based appliances (e.g., ACs, washing machines) must not be uninstalled without authorization from Appliance Bright or the manufacturer.</li>
+                <li>Installation-based appliances (e.g., ACs, washing machines) must not be uninstalled without authorization from Siva Electronics or the manufacturer.</li>
               </ul>
             </div>
           </section>
@@ -88,7 +88,7 @@ const CancellationRefundPolicy = () => {
             <div className="space-y-4">
               <ul className="list-disc pl-6 space-y-2">
                 <li>Most appliances come with a manufacturer's warranty. Warranty claims must be processed directly with the authorized service center.</li>
-                <li>For installation or service issues handled by Appliance Bright, customers can reach out to our support team for assistance.</li>
+                <li>For installation or service issues handled by Siva Electronics, customers can reach out to our support team for assistance.</li>
                 <li>Refunds are not applicable for issues covered under warranty but will be handled through repair/replacement as per manufacturer policy.</li>
               </ul>
             </div>
@@ -108,11 +108,11 @@ const CancellationRefundPolicy = () => {
             <h2 className="text-2xl font-semibold mb-4">Need Help?</h2>
             <p className="mb-4">For cancellation, return, or refund assistance, please contact:</p>
             <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="font-semibold">Appliance Bright</p>
-              <p> 123 Appliance Street, Mumbai, Maharashtra 400001, India</p>
-              <p> +91 12345 67890</p>
-              <p> Email: support@appliancebright.com</p>
-              <p> Website: www.appliancebright.com</p>
+              <p className="font-semibold">Siva Electronics</p>
+              <p>📍 OPP. TO 21, J.K.PLAZA, PALLIPAT MAIN ROAD, PODHATUR PETTAI, Tiruvallur, Tamil Nadu, 631208</p>
+              <p>📞 +91 9943691712 / +91 6383791917</p>
+              <p>📧 Email: contact@sivaappliances.shop</p>
+              <p>🌐 Website: http://sivaappliances.shop/</p>
               <p className="mt-2 text-sm text-muted-foreground">
                 Our team is available Mon–Sat, 10 AM – 7 PM IST.
               </p>
