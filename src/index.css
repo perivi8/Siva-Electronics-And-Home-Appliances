@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* eCommerce Electronics Design System */
+    --background: 240 10% 96%;
+    --foreground: 215 25% 7%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 7%;
+
+    /* Primary - Dark Navy (Tech Premium) */
+    --primary: 215 25% 7%;
+    --primary-foreground: 240 10% 96%;
+
+    /* Secondary - Vibrant Blue (Accent) */
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted backgrounds and text */
+    --muted: 240 4% 46%;
+    --muted-foreground: 215 14% 34%;
+
+    /* CTA/Accent - Vibrant Yellow */
+    --accent: 48 96% 53%;
+    --accent-foreground: 215 25% 7%;
+
+    /* Success - Green */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Dark sections background */
+    --dark-section: 215 28% 17%;
+    --dark-section-foreground: 240 10% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 217 91% 60%;
+
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 25% 7%), hsl(215 28% 17%));
+    --gradient-accent: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 55%));
+    --gradient-cta: linear-gradient(135deg, hsl(48 96% 53%), hsl(48 96% 48%));
+
+    /* Premium shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(215 25% 7% / 0.1);
+    --shadow-card: 0 4px 20px -4px hsl(215 25% 7% / 0.08);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.15);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 240 10% 96%;
+
+    --card: 215 25% 7%;
+    --card-foreground: 240 10% 96%;
+
+    --popover: 215 25% 7%;
+    --popover-foreground: 240 10% 96%;
+
+    --primary: 240 10% 96%;
+    --primary-foreground: 215 25% 7%;
+
+    --secondary: 217 91% 65%;
+    --secondary-foreground: 215 25% 7%;
+
+    --muted: 240 4% 46%;
+    --muted-foreground: 215 14% 34%;
+
+    --accent: 48 96% 53%;
+    --accent-foreground: 215 25% 7%;
+
+    --dark-section: 215 25% 7%;
+    --dark-section-foreground: 240 10% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 10% 96%;
+
+    --border: 240 4% 26%;
+    --input: 240 4% 26%;
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
