@@ -9,10 +9,22 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: mode === 'production' ? '/appliance-bright/' : '/',
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    assetsDir: 'assets',
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+      },
     },
   },
 }));

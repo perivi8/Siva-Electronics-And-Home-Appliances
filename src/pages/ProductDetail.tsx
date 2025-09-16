@@ -165,11 +165,11 @@ const ProductDetail = () => {
                 </div>
               </div>
               <img 
-                src={productImages[selectedImage]} 
+                src={`${import.meta.env.BASE_URL}${productImages[selectedImage]}`} 
                 alt={product.name}
                 className="w-full h-full object-contain p-4"
                 onError={(e) => {
-                  e.currentTarget.src = '/placeholder.svg';
+                  e.currentTarget.src = `${import.meta.env.BASE_URL}/placeholder.svg`;
                 }}
               />
             </div>
@@ -188,11 +188,11 @@ const ProductDetail = () => {
                   }}
                 >
                   <img 
-                    src={image} 
+                    src={`${import.meta.env.BASE_URL}${image}`} 
                     alt={`${product.name} view ${index + 1}`}
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      e.currentTarget.src = '/placeholder.svg';
+                      e.currentTarget.src = `${import.meta.env.BASE_URL}/placeholder.svg`;
                     }}
                   />
                 </button>
