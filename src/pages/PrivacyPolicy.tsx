@@ -21,82 +21,107 @@ const PrivacyPolicy = () => {
         </div>
         
         <div className="prose prose-lg max-w-none">
-          <p className="text-muted-foreground mb-6">
-            Last updated: September 16, 2024
+          <p className="text-lg font-semibold text-accent mb-6">
+            Your Privacy, Our Responsibility
           </p>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">Introduction</h2>
-            <p className="mb-3">
-              Welcome to Appliance Bright. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights.
+          <p className="mb-8">
+            At Appliance Bright, we respect your trust and are committed to protecting your personal information. As a retailer and service provider of home appliances and electronics, we ensure that all customer data is collected, stored, and used responsibly—aligned with the Indian IT Act and international data protection principles such as GDPR.
+          </p>
+
+          <p className="mb-8">
+            This Privacy Policy explains what data we collect, how we use it, how we safeguard it, and your rights as a valued customer.
+          </p>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
+            <p className="mb-4">When you interact with us (online store, service requests, or in-store purchases), we may collect:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Full Name</li>
+              <li>Contact Information (phone number, email address)</li>
+              <li>Billing & Shipping Address</li>
+              <li>Order & Payment Details (via secure third-party gateways)</li>
+              <li>Service/Repair Requests & Warranty Information</li>
+              <li>Device & Browser Data (for website analytics)</li>
+              <li>Cookies & Tracking Data (for personalized experiences)</li>
+            </ul>
+            <p className="mt-4 text-sm text-muted-foreground">
+              We collect only the information necessary to provide reliable products and services.
             </p>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">Information We Collect</h2>
-            <p className="mb-3">
-              We may collect, use, store, and transfer different kinds of personal data about you which we have grouped together as follows:
-            </p>
-            <ul className="list-disc pl-6 mb-3 space-y-2">
-              <li>Identity Data (name, username, title, date of birth, gender)</li>
-              <li>Contact Data (billing address, delivery address, email address, telephone numbers)</li>
-              <li>Financial Data (payment card details, bank account details)</li>
-              <li>Transaction Data (details about payments to and from you, products you've purchased)</li>
-              <li>Technical Data (IP address, login data, browser type, time zone setting, location)</li>
-              <li>Profile Data (username and password, purchases, orders, feedback, survey responses)</li>
-              <li>Usage Data (information about how you use our website, products, and services)</li>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Why We Collect Your Information</h2>
+            <p className="mb-4">Your data is used for legitimate business purposes, including:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Processing orders and managing deliveries</li>
+              <li>Handling installation, service, and warranty requests</li>
+              <li>Providing updates on purchases, repairs, or support queries</li>
+              <li>Sending optional promotional offers and product launches (with your consent)</li>
+              <li>Improving our website, products, and customer experience</li>
+              <li>Meeting legal, tax, and regulatory obligations</li>
             </ul>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">How We Use Your Data</h2>
-            <p className="mb-3">
-              We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:
-            </p>
-            <ul className="list-disc pl-6 mb-3 space-y-2">
-              <li>To register you as a new customer</li>
-              <li>To process and deliver your orders</li>
-              <li>To manage our relationship with you</li>
-              <li>To enable you to participate in a prize draw, competition, or complete a survey</li>
-              <li>To administer and protect our business and this website</li>
-              <li>To deliver relevant website content and advertisements to you</li>
-              <li>To use data analytics to improve our website, products/services, marketing, and customer experiences</li>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">How We Protect Your Information</h2>
+            <p className="mb-4">We implement strong safeguards to ensure your data is protected at all times:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>SSL Encryption for all online transactions</li>
+              <li>Secure Payment Gateways – we never store card or UPI details</li>
+              <li>Firewall & Access Controls on servers</li>
+              <li>Restricted Data Access – only authorized staff handle sensitive data</li>
+              <li>Periodic Audits to maintain compliance and security standards</li>
             </ul>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">Data Security</h2>
-            <p className="mb-3">
-              We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used, or accessed in an unauthorized way, altered, or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors, and other third parties who have a business need to know.
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Your Rights & Choices</h2>
+            <p className="mb-4">You have full control of your data. At any time, you may:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Request a copy of your personal data held by us</li>
+              <li>Ask for updates or corrections to your information</li>
+              <li>Request deletion of your data (subject to legal requirements)</li>
+              <li>Opt out of promotional messages (email, SMS, WhatsApp)</li>
+              <li>Raise concerns about data handling practices</li>
+            </ul>
+            <p className="mt-4 text-sm text-muted-foreground">
+              We aim to respond to verified requests within 30 days.
             </p>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">Your Legal Rights</h2>
-            <p className="mb-3">
-              Under certain circumstances, you have rights under data protection laws in relation to your personal data, including the right to:
-            </p>
-            <ul className="list-disc pl-6 mb-3 space-y-2">
-              <li>Request access to your personal data</li>
-              <li>Request correction of your personal data</li>
-              <li>Request erasure of your personal data</li>
-              <li>Object to processing of your personal data</li>
-              <li>Request restriction of processing your personal data</li>
-              <li>Request transfer of your personal data</li>
-              <li>Right to withdraw consent</li>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Third-Party Sharing</h2>
+            <p className="mb-4">We do not sell or rent your personal information. Data may be shared only with:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Courier/logistics partners (for delivery of appliances)</li>
+              <li>Authorized service technicians (for repair & warranty)</li>
+              <li>Payment processors (for secure transactions)</li>
+              <li>Government/regulatory bodies (when legally required)</li>
             </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Policy Updates</h2>
+            <p className="mb-4">
+              This Privacy Policy may be updated from time to time to reflect changes in our business practices, technology, or legal requirements. The revised version will always be available on our website with the updated "Last Revised" date.
+            </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-3">Contact Us</h2>
-            <p>
-              If you have any questions about this privacy policy or our privacy practices, please contact us at:
-            </p>
-            <p className="mt-2">
-              Email: privacy@appliancebright.com<br />
-              Phone: +1 (555) 123-4567<br />
-              Address: 123 Appliance Street, Tech City, TC 12345, Country
-            </p>
+            <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+            <p className="mb-4">For questions, concerns, or privacy requests, please contact:</p>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <p className="font-semibold">Appliance Bright</p>
+              <p>📍 123 Appliance Street, Mumbai, Maharashtra 400001, India</p>
+              <p>📞 +91 12345 67890</p>
+              <p>📧 Email: support@appliancebright.com</p>
+              <p>🌐 Website: www.appliancebright.com</p>
+            </div>
+            <div className="mt-6 text-sm text-muted-foreground">
+              <p>Last Updated: August 2025</p>
+              <p>© 2025 Appliance Bright. All Rights Reserved.</p>
+            </div>
           </section>
         </div>
       </div>

@@ -21,100 +21,95 @@ const ShippingPolicy = () => {
         </div>
         
         <div className="prose prose-lg max-w-none">
-          <p className="text-muted-foreground mb-6">
-            Last updated: September 16, 2024
+          <p className="text-lg font-semibold text-accent mb-6">
+            Safe, Reliable, and On-Time Delivery of Your Appliances
           </p>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">1. Shipping Destinations</h2>
-            <p className="mb-3">
-              We currently ship to all major cities and towns across India. For remote locations, additional shipping charges may apply. Please check your delivery address during checkout to confirm service availability.
-            </p>
-          </section>
+          <p className="mb-8">
+            At Appliance Bright, we are committed to delivering your home appliances and electronics securely and within the promised time frame. This Shipping Policy outlines our procedures for order processing, delivery, charges, and customer support.
+          </p>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">2. Processing Time</h2>
-            <p className="mb-3">
-              All orders are processed within 1-2 business days (excluding weekends and public holidays) after receiving your order confirmation email. You will receive an email with tracking information once your order has been shipped.
-            </p>
-          </section>
-
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">3. Delivery Timeframes</h2>
-            <p className="mb-3">
-              Delivery times may vary depending on your location and the shipping method selected at checkout. Standard delivery times are as follows:
-            </p>
-            <ul className="list-disc pl-6 mb-3 space-y-2">
-              <li><strong>Metro Cities:</strong> 2-4 business days</li>
-              <li><strong>Other Major Cities:</strong> 3-6 business days</li>
-              <li><strong>Tier 2 & 3 Cities:</strong> 4-8 business days</li>
-              <li><strong>Remote Areas:</strong> 7-12 business days</li>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Order Processing Time</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Orders are processed within 2–4 business days after payment confirmation.</li>
+              <li>Orders placed on Sundays or public holidays are processed on the next working day.</li>
+              <li>In the case of high-demand or out-of-stock products, customers will be notified with revised timelines or offered alternatives.</li>
             </ul>
-            <p className="text-sm text-muted-foreground">
-              *These are estimated delivery times and may vary due to circumstances beyond our control such as weather conditions, transportation delays, or customs clearance.
-            </p>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">4. Shipping Methods & Rates</h2>
-            <p className="mb-3">
-              We offer the following shipping options:
-            </p>
-            <div className="bg-muted/30 p-4 rounded-lg mb-3">
-              <h3 className="font-semibold text-lg mb-2">Standard Shipping (3-7 business days)</h3>
-              <p>Free on orders above ₹2,999 | ₹99 for orders below ₹2,999</p>
-            </div>
-            <div className="bg-muted/30 p-4 rounded-lg mb-3">
-              <h3 className="font-semibold text-lg mb-2">Express Shipping (1-3 business days)</h3>
-              <p>Flat ₹199 for all orders</p>
-            </div>
-            <div className="bg-muted/30 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg mb-2">Same Day Delivery (Select Pincodes)</h3>
-              <p>Available in select areas for ₹299. Order before 12 PM for same day delivery.</p>
-            </div>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Shipping Destinations & Delivery Timelines</h2>
+            <h3 className="text-lg font-semibold mb-3">Domestic Shipping (India)</h3>
+            <ul className="list-disc pl-6 space-y-2 mb-6">
+              <li><strong>Metro Cities:</strong> 3–7 business days after dispatch</li>
+              <li><strong>Non-Metro Cities:</strong> 5–10 business days after dispatch</li>
+              <li><strong>Remote/Rural Areas:</strong> 7–12 business days after dispatch</li>
+            </ul>
+            
+            <h3 className="text-lg font-semibold mb-3">International Shipping</h3>
+            <p className="mb-4">At present, international shipping is not available. If launched in the future, timelines and charges will be updated accordingly.</p>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">5. Order Tracking</h2>
-            <p className="mb-3">
-              Once your order has been shipped, you will receive a shipping confirmation email with a tracking number and a link to track your package. You can also track your order by logging into your account on our website.
-            </p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Shipping Charges</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Shipping charges vary based on product category, weight, dimensions, and destination.</li>
+              <li>Large appliances (e.g., refrigerators, washing machines, air conditioners) may incur special handling charges due to size and logistics.</li>
+              <li>Free shipping offers may be available during promotions or for orders above a certain value.</li>
+            </ul>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">6. Failed Deliveries</h2>
-            <p className="mb-3">
-              If a delivery attempt is unsuccessful due to an incorrect address, recipient not available, or refusal to accept the package, the package will be returned to our facility. Additional shipping fees will apply for re-delivery.
-            </p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Packaging & Handling</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>All appliances are packed in manufacturer-approved packaging to ensure safe transit.</li>
+              <li>Fragile items (televisions, glass panels, electronics) are double-cushioned and clearly labeled.</li>
+              <li>Customers are advised to check packaging at the time of delivery. If tampering or damage is visible, the delivery should be reported immediately.</li>
+            </ul>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">7. Damaged or Lost Shipments</h2>
-            <p className="mb-3">
-              While we take great care in packaging your orders, if you receive a damaged package, please contact our customer service within 48 hours of delivery. For lost shipments, please allow 7 business days from the expected delivery date before reporting.
-            </p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Tracking Your Order</h2>
+            <p className="mb-4">Once dispatched, you will receive:</p>
+            <ul className="list-disc pl-6 space-y-2 mb-4">
+              <li>A tracking number via SMS/email</li>
+              <li>A tracking link for real-time shipment updates</li>
+            </ul>
+            <p className="text-sm text-muted-foreground">Please allow 24–48 hours for tracking details to update after dispatch.</p>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">8. International Shipping</h2>
-            <p className="mb-3">
-              We currently do not offer international shipping. We only ship within India.
-            </p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Installation & Assembly</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>For select appliances, installation/assembly is included and carried out by authorized technicians.</li>
+              <li>Installation timelines may differ from delivery timelines, depending on technician availability.</li>
+              <li>Customers will be informed at checkout whether installation is included or charged separately.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Delays & Exceptions</h2>
+            <p className="mb-4">While we strive for prompt delivery, delays may occur due to:</p>
+            <ul className="list-disc pl-6 space-y-2 mb-4">
+              <li>Courier/logistics disruptions</li>
+              <li>Regional holidays or strikes</li>
+              <li>Extreme weather or natural calamities</li>
+              <li>Customer unavailability at the time of delivery</li>
+            </ul>
+            <p>In such cases, our support team will keep you informed and assist with rescheduling.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-3">9. Contact Us</h2>
-            <p className="mb-2">
-              If you have any questions about our shipping policy, please contact our customer service team:
-            </p>
-            <p className="mt-2">
-              Email: shipping@appliancebright.com<br />
-              Phone: +91 98765 43210 (10 AM - 7 PM, Monday to Saturday)<br />
-              Live Chat: Available on our website during business hours
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              *Our customer service team will respond to all inquiries within 24-48 business hours.
-            </p>
+            <h2 className="text-2xl font-semibold mb-4">Need Help With Shipping?</h2>
+            <p className="mb-4">For shipping-related questions, please contact:</p>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <p className="font-semibold">Appliance Bright</p>
+              <p> 123 Appliance Street, Mumbai, Maharashtra 400001, India</p>
+              <p> +91 12345 67890</p>
+              <p> Email: support@appliancebright.com</p>
+              <p> Website: www.appliancebright.com</p>
+            </div>
           </section>
         </div>
       </div>

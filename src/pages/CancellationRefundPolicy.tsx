@@ -21,114 +21,102 @@ const CancellationRefundPolicy = () => {
         </div>
         
         <div className="prose prose-lg max-w-none">
-          <p className="text-muted-foreground mb-6">
-            Last updated: September 16, 2024
+          <p className="text-lg font-semibold text-accent mb-6">
+            Fair, Transparent, and Customer-Friendly
           </p>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-4">1. Order Cancellation</h2>
+          <p className="mb-8">
+            At Appliance Bright, customer satisfaction is our priority. While we strive to deliver high-quality appliances and services, we understand that cancellations or refunds may occasionally be required. This policy outlines how we handle such requests in a clear and transparent manner.
+          </p>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Order Cancellations</h2>
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold">1.1 Before Shipment</h3>
-              <p>
-                You may cancel your order within 24 hours of placing it, provided the order has not yet been shipped. To cancel your order:
-              </p>
+              <h3 className="text-lg font-semibold">Cancellation Window:</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Go to 'My Orders' in your account</li>
-                <li>Select the order you wish to cancel</li>
-                <li>Click on 'Cancel Order' and follow the prompts</li>
-                <li>You will receive a confirmation email once cancellation is processed</li>
+                <li>Orders can be cancelled within 2 hours of purchase, provided they have not yet been processed, packed, or dispatched.</li>
+                <li>Once an order has been shipped or handed over to the courier, cancellations are no longer possible.</li>
+                <li>To cancel an order, customers must contact our support team with their Order ID.</li>
               </ul>
-              
-              <h3 className="text-lg font-semibold mt-6">1.2 After Shipment</h3>
-              <p>
-                If your order has already been shipped, you may still be able to cancel it if you act quickly. Please contact our customer service immediately at <a href="mailto:support@appliancebright.com" className="text-accent hover:underline">support@appliancebright.com</a> or call us at +91 98765 43210.
-              </p>
             </div>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-4">2. Returns Policy</h2>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Returns & Replacements</h2>
             <div className="space-y-4">
-              <p>
-                We accept returns within 7 days of delivery for most items, provided they are in their original condition with all tags and packaging intact. Some products may have different return policies as specified on their product pages.
-              </p>
-              
-              <h3 className="text-lg font-semibold">2.1 Items Eligible for Return</h3>
+              <p>We accept returns or offer replacements in the following situations:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Products with manufacturing defects</li>
-                <li>Wrong items received</li>
-                <li>Damaged during transit</li>
-                <li>Significantly not as described</li>
+                <li>Product received is damaged in transit.</li>
+                <li>Wrong item delivered.</li>
+                <li>Verified manufacturing defects within warranty terms.</li>
               </ul>
               
-              <h3 className="text-lg font-semibold mt-6">2.2 Non-Returnable Items</h3>
-              <p>The following items cannot be returned unless they arrive damaged or defective:</p>
+              <h3 className="text-lg font-semibold mt-6">Conditions for Returns:</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Gift cards</li>
-                <li>Downloadable software products</li>
-                <li>Personal care appliances (unless defective)</li>
-                <li>Products marked as "Final Sale" or "Non-Returnable"</li>
+                <li>Return requests must be raised within 48 hours of delivery.</li>
+                <li>The product must be unused, with all original packaging, manuals, and accessories intact.</li>
+                <li>Installation-based appliances (e.g., ACs, washing machines) must not be uninstalled without authorization from Appliance Bright or the manufacturer.</li>
               </ul>
-              
-              <h3 className="text-lg font-semibold mt-6">2.3 How to Initiate a Return</h3>
-              <ol className="list-decimal pl-6 space-y-2">
-                <li>Log in to your account and go to 'My Orders'</li>
-                <li>Select the item(s) you wish to return</li>
-                <li>Choose a return reason and submit your request</li>
-                <li>Once approved, you'll receive a Return Authorization Number and return instructions</li>
-                <li>Pack the item securely with all original packaging and accessories</li>
-                <li>Affix the return label to the package and drop it off at the designated courier location</li>
-              </ol>
             </div>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-4">3. Refund Process</h2>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Non-Returnable Items</h2>
+            <p className="mb-4">We cannot accept returns/refunds for:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Products damaged due to customer misuse, negligence, or unauthorized installation.</li>
+              <li>Items without original packaging or invoice.</li>
+              <li>Opened consumables or accessories (filters, batteries, etc.).</li>
+              <li>Custom orders or special bulk requests.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Refund Process</h2>
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold">3.1 Refund Methods</h3>
-              <p>Refunds will be issued to the original payment method used for the purchase. The time it takes for the refund to reflect in your account may vary depending on your payment method:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Credit/Debit Cards: 5-10 business days</li>
-                <li>Net Banking: 3-7 business days</li>
-                <li>UPI: 1-3 business days</li>
-                <li>Wallet: 1-2 business days</li>
+                <li>Once approved, refunds are initiated within 3–5 business days.</li>
+                <li>Refunds are processed via the original payment method (UPI, bank transfer, card, etc.).</li>
+                <li>Depending on the payment provider, refunds may take 5–10 business days to reflect in your account.</li>
+                <li>In certain cases, refunds may be issued as store credit or replacement based on customer preference.</li>
               </ul>
-              
-              <h3 className="text-lg font-semibold mt-6">3.2 Refund Amount</h3>
-              <p>The refund amount will include the product price plus any applicable taxes. Original shipping charges are non-refundable unless the return is due to our error or a defective product.</p>
-              
-              <h3 className="text-lg font-semibold mt-6">3.3 Processing Time</h3>
-              <p>Once we receive your return, it will take approximately 3-5 business days to process. You will receive an email notification once your refund has been processed.</p>
             </div>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-4">4. Replacement Policy</h2>
-            <p>We offer free replacement for products that are damaged, defective, or different from what you ordered. To request a replacement:</p>
-            <ol className="list-decimal pl-6 space-y-2 mt-4">
-              <li>Contact our customer service within 48 hours of delivery</li>
-              <li>Provide your order number and details of the issue</li>
-              <li>We may request photos or videos of the damaged/defective product</li>
-              <li>Once approved, we'll ship the replacement item at no additional cost</li>
-            </ol>
-            <p className="mt-4 text-sm text-muted-foreground">
-              *Note: Replacement is subject to product availability. If the product is out of stock, we will issue a full refund.
-            </p>
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Warranty & Service Claims</h2>
+            <div className="space-y-4">
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Most appliances come with a manufacturer's warranty. Warranty claims must be processed directly with the authorized service center.</li>
+                <li>For installation or service issues handled by Appliance Bright, customers can reach out to our support team for assistance.</li>
+                <li>Refunds are not applicable for issues covered under warranty but will be handled through repair/replacement as per manufacturer policy.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Exceptions</h2>
+            <p className="mb-4">Refunds/cancellations are not applicable in cases of:</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Delays caused by logistics/courier providers beyond our control.</li>
+              <li>Customer unavailability during scheduled delivery/installation.</li>
+              <li>Price fluctuations after order placement.</li>
+            </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">5. Contact Us</h2>
-            <p className="mb-2">
-              If you have any questions about our cancellation and refund policy, please contact our customer service team:
-            </p>
-            <p className="mt-2">
-              Email: returns@appliancebright.com<br />
-              Phone: +91 98765 43210 (10 AM - 7 PM, Monday to Saturday)<br />
-              Live Chat: Available on our website during business hours
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              *Our customer service team will respond to all inquiries within 24-48 business hours.
-            </p>
+            <h2 className="text-2xl font-semibold mb-4">Need Help?</h2>
+            <p className="mb-4">For cancellation, return, or refund assistance, please contact:</p>
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <p className="font-semibold">Appliance Bright</p>
+              <p> 123 Appliance Street, Mumbai, Maharashtra 400001, India</p>
+              <p> +91 12345 67890</p>
+              <p> Email: support@appliancebright.com</p>
+              <p> Website: www.appliancebright.com</p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Our team is available Mon–Sat, 10 AM – 7 PM IST.
+              </p>
+            </div>
           </section>
         </div>
       </div>
