@@ -11,8 +11,8 @@ const About = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">About Appliance Bright</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your trusted partner for premium appliances and electronics since 2010. 
-            We're committed to bringing you the latest technology and exceptional service.
+            Your trusted destination for premium home appliances and electronics in India. 
+            We bring you the latest technology from top brands with exceptional service and nationwide delivery.
           </p>
         </div>
 
@@ -21,57 +21,99 @@ const About = () => {
           <div>
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <p className="text-gray-600 mb-4">
-              Founded in 2010, Appliance Bright started as a small family business with a simple mission: 
-              to provide high-quality appliances and electronics at affordable prices. Over the years, 
-              we've grown into a trusted retailer serving thousands of customers nationwide.
+              Appliance Bright has been revolutionizing homes across India with cutting-edge appliances and electronics. 
+              From kitchen essentials to home comfort solutions, we've built our reputation on quality, reliability, and customer satisfaction.
             </p>
             <p className="text-gray-600 mb-4">
-              Our commitment to excellence, customer service, and innovation has made us a leader in 
-              the appliance industry. We carefully curate our product selection to ensure every item 
-              meets our high standards for quality and reliability.
+              We partner with leading brands like Samsung, LG, Sony, Whirlpool, Bosch, Panasonic, and many more to bring you 
+              the finest selection of refrigerators, washing machines, air conditioners, televisions, and kitchen appliances. 
+              Every product is carefully selected to meet our high standards for performance and durability.
             </p>
             <p className="text-gray-600">
-              Today, we continue to evolve and adapt to meet the changing needs of our customers, 
-              always staying true to our core values of integrity, quality, and exceptional service.
+              Our commitment extends beyond just selling appliances. We provide comprehensive installation services, 
+              warranty support, and after-sales service to ensure your complete satisfaction with every purchase.
             </p>
           </div>
           <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg p-8 flex items-center justify-center">
             <div className="text-center">
-              <div className="text-6xl mb-4">🏢</div>
-              <h3 className="text-2xl font-bold">13+ Years</h3>
-              <p className="text-gray-600">of Excellence</p>
+              <div className="text-6xl mb-4">🏠</div>
+              <h3 className="text-2xl font-bold">Making Homes</h3>
+              <p className="text-gray-600">Smart & Comfortable</p>
             </div>
           </div>
         </div>
 
-        {/* Values */}
+        {/* Product Categories */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Values</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">What We Offer</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center p-6">
               <CardContent className="pt-6">
+                <div className="text-4xl mb-4">🏠</div>
+                <h3 className="text-xl font-bold mb-2">Home Appliances</h3>
+                <p className="text-gray-600">
+                  Air conditioners, washing machines, water purifiers, ceiling fans, and vacuum cleaners for modern living.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6">
+              <CardContent className="pt-6">
+                <div className="text-4xl mb-4">🍳</div>
+                <h3 className="text-xl font-bold mb-2">Kitchen Appliances</h3>
+                <p className="text-gray-600">
+                  Refrigerators, microwaves, OTG ovens, induction cooktops, air fryers, and mixer grinders for your culinary needs.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6">
+              <CardContent className="pt-6">
+                <div className="text-4xl mb-4">📺</div>
+                <h3 className="text-xl font-bold mb-2">Electronics</h3>
+                <p className="text-gray-600">
+                  Smart TVs, QLED displays, Android TVs with the latest technology for entertainment and connectivity.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Our Values */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us</h2>
+          <div className="grid md:grid-cols-4 gap-6">
+            <Card className="text-center p-6">
+              <CardContent className="pt-6">
                 <div className="text-4xl mb-4">⭐</div>
-                <h3 className="text-xl font-bold mb-2">Quality First</h3>
+                <h3 className="text-xl font-bold mb-2">Premium Brands</h3>
                 <p className="text-gray-600">
-                  We only offer products that meet our rigorous quality standards and provide lasting value.
+                  Samsung, LG, Sony, Whirlpool, Bosch, and other trusted brands.
                 </p>
               </CardContent>
             </Card>
             <Card className="text-center p-6">
               <CardContent className="pt-6">
-                <div className="text-4xl mb-4">🤝</div>
-                <h3 className="text-xl font-bold mb-2">Customer Focus</h3>
+                <div className="text-4xl mb-4">🚚</div>
+                <h3 className="text-xl font-bold mb-2">Pan-India Delivery</h3>
                 <p className="text-gray-600">
-                  Your satisfaction is our priority. We're here to help you find the perfect solution.
+                  Fast and secure delivery across metro cities and remote areas.
                 </p>
               </CardContent>
             </Card>
             <Card className="text-center p-6">
               <CardContent className="pt-6">
-                <div className="text-4xl mb-4">🚀</div>
-                <h3 className="text-xl font-bold mb-2">Innovation</h3>
+                <div className="text-4xl mb-4">🔧</div>
+                <h3 className="text-xl font-bold mb-2">Installation Service</h3>
                 <p className="text-gray-600">
-                  We stay ahead of technology trends to bring you the latest and greatest products.
+                  Professional installation by authorized technicians.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6">
+              <CardContent className="pt-6">
+                <div className="text-4xl mb-4">🛡️</div>
+                <h3 className="text-xl font-bold mb-2">Warranty Support</h3>
+                <p className="text-gray-600">
+                  Comprehensive warranty coverage and after-sales service.
                 </p>
               </CardContent>
             </Card>
@@ -86,37 +128,61 @@ const About = () => {
               <p className="text-gray-600">Happy Customers</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">1,000+</div>
-              <p className="text-gray-600">Products</p>
+              <div className="text-3xl font-bold text-primary mb-2">24+</div>
+              <p className="text-gray-600">Product Categories</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <p className="text-gray-600">Brands</p>
+              <div className="text-3xl font-bold text-primary mb-2">15+</div>
+              <p className="text-gray-600">Premium Brands</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <p className="text-gray-600">Support</p>
+              <p className="text-gray-600">Customer Support</p>
             </div>
           </div>
         </div>
 
-        {/* Team */}
-        <div className="text-center">
-          <h2 className="text-3xl font-bold mb-8">Meet Our Team</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+        {/* Featured Brands */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Our Brand Partners</h2>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center">
             {[
-              { name: "Sarah Johnson", role: "CEO & Founder", emoji: "👩‍💼" },
-              { name: "Mike Chen", role: "Head of Operations", emoji: "👨‍💻" },
-              { name: "Emily Davis", role: "Customer Success Manager", emoji: "👩‍🎓" }
-            ].map((member, index) => (
-              <Card key={index} className="text-center p-6">
-                <CardContent className="pt-6">
-                  <div className="text-6xl mb-4">{member.emoji}</div>
-                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-gray-600">{member.role}</p>
-                </CardContent>
-              </Card>
+              "Samsung", "LG", "Sony", "Whirlpool", "Bosch", "Panasonic", 
+              "Bajaj", "Prestige", "Philips", "Godrej", "IFB", "Mi",
+              "Blue Star", "Haier", "TCL", "Crompton", "Kent", "Morphy Richards",
+              "Havells", "Carrier", "Pigeon", "Eureka Forbes", "Voltas"
+            ].slice(0, 12).map((brand, index) => (
+              <div key={index} className="text-center">
+                <div className="bg-white p-4 rounded-lg shadow-sm border">
+                  <p className="font-semibold text-gray-700">{brand}</p>
+                </div>
+              </div>
             ))}
+          </div>
+        </div>
+
+        {/* Contact Information */}
+        <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8">
+          <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+          <p className="text-gray-600 mb-6">
+            Have questions about our products or need assistance? Our expert team is here to help you find the perfect appliance for your home.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div>
+              <div className="text-2xl mb-2">📞</div>
+              <p className="font-semibold">Call Us</p>
+              <p className="text-gray-600">+91 12345 67890</p>
+            </div>
+            <div>
+              <div className="text-2xl mb-2">📧</div>
+              <p className="font-semibold">Email Us</p>
+              <p className="text-gray-600">support@appliancebright.com</p>
+            </div>
+            <div>
+              <div className="text-2xl mb-2">📍</div>
+              <p className="font-semibold">Visit Us</p>
+              <p className="text-gray-600">Mumbai, Maharashtra</p>
+            </div>
           </div>
         </div>
       </main>

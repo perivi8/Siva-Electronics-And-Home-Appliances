@@ -164,7 +164,7 @@ const NewArrivals = () => {
                       e.currentTarget.src = '/placeholder.svg';
                     }}
                   />
-                  <div className="absolute top-2 right-2">
+                  <div className="absolute top-2 left-2">
                     <Badge className="bg-green-500">New</Badge>
                   </div>
                 </div>
