@@ -99,13 +99,17 @@ const Wishlist = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {wishlistProducts.map((product) => (
-            <Card key={product.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+            <Card 
+              key={product.id} 
+              className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+              onClick={() => navigate(`/product/${product.id}`)}
+            >
               <div className="relative">
-                <div className="aspect-square bg-gray-100 overflow-hidden">
+                <div className="aspect-square bg-white overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain p-2"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = '/placeholder.svg';
@@ -122,16 +126,16 @@ const Wishlist = () => {
                   variant="ghost"
                   size="icon"
                   className="absolute top-4 right-4 z-10 bg-white/80 hover:bg-white rounded-full w-8 h-8"
-                  onClick={() => handleRemoveFromWishlist(product.id)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleRemoveFromWishlist(product.id);
+                  }}
                 >
                   <Trash2 className="w-4 h-4 text-red-500" />
                 </Button>
                 
                 <CardHeader className="p-4">
-                  <CardTitle 
-                    className="text-lg font-semibold line-clamp-2 cursor-pointer hover:text-primary"
-                    onClick={() => navigate(`/product/${product.id}`)}
-                  >
+                  <CardTitle className="text-lg font-semibold line-clamp-2 hover:text-primary">
                     {product.name}
                   </CardTitle>
                   
@@ -163,14 +167,20 @@ const Wishlist = () => {
                   <div className="flex gap-2">
                     <Button 
                       className="flex-1"
-                      onClick={() => handleAddToCart(product.id)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleAddToCart(product.id);
+                      }}
                     >
                       <ShoppingCart className="w-4 h-4 mr-2" />
                       Add to Cart
                     </Button>
                     <Button 
                       variant="outline"
-                      onClick={() => navigate(`/product/${product.id}`)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        navigate(`/product/${product.id}`);
+                      }}
                     >
                       View
                     </Button>

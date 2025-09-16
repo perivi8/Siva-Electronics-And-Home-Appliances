@@ -19,6 +19,7 @@ import {
 import { Package, Calendar, MapPin, Phone, ShoppingBag, X } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { useToast } from '@/hooks/use-toast';
+import { products } from '@/data/products';
 
 interface Order {
   id: string;
@@ -195,7 +196,7 @@ const MyOrders = () => {
                         >
                           <div className="w-16 h-16 bg-gray-100 rounded-lg flex-shrink-0 overflow-hidden">
                             <img
-                              src={`/src/assets/${item.id}.jpg`}
+                              src={products.find(p => p.id === item.id)?.image}
                               alt={item.name}
                               className="w-full h-full object-cover"
                               onError={(e) => {
